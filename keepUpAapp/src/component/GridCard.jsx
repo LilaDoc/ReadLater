@@ -1,9 +1,13 @@
 import React from 'react';
 import styles from './GridCard.module.css';
+import CardToolBar from './CardToolBar';
 
 function GridCard(props) {
     return (
         <div className={styles.gridCard}>
+            <div className={styles.gridCardToolBar}>
+                <CardToolBar />
+            </div>
             <div className={styles.gridCardHeader}>
                 <input type="checkbox" />
                 <h1>{props.title}</h1>

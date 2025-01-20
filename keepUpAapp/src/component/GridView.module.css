@@ -1,11 +1,14 @@
 .liste {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 10px;
     width: 100%;
-    height: 100%;
-    overflow-y: visible;
-    
+    grid-auto-rows: auto;
+    grid-auto-flow: row;
+    border-radius: 6px;
+    gap: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 30px 100px;
+    overflow: visible;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
 
