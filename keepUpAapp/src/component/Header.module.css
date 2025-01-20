@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(109, 35, 35);
+    color: white;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    font-size: 0.5rem;
+}
+.searchContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0rem;
+}

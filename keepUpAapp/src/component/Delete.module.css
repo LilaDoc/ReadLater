@@ -1,0 +1,18 @@
+.delete {
+    
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+
+}
+.delete img {
+    width: 20px;
+    height: 20px;
+}

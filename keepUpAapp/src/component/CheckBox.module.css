@@ -1,0 +1,68 @@
+
+/* Custom checkbox */
+.checkmark {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 14px;
+    width: 14px;
+    background-color: #eeeeee;
+    border-radius: 4px;  /* Optional: for rounded corners */
+    border: 2px solid #ccc;
+}
+
+/* On hover */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+    border: 1px solid #ccc;
+}
+
+/* When checked */
+.container input:checked ~ .checkmark {
+    background-color: #3f3f3f;  /* Change this color to what you want */
+}
+
+/* Checkmark (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 4px;
+    top: 1px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    transition: all 0.3s ease-in-out;
+}
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.cardCheckbox {
+    margin-left: 0.5rem;
+}
+/* The container */
+.container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    user-select: none;
+    margin: 0;
+}

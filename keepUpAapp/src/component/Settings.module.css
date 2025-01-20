@@ -1,0 +1,77 @@
+.settings {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #dbdbdb;
+    /* border-top: 1px solid #f8f7f7; */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    width: 275px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+button {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    padding-left: 1rem;  
+    
+    cursor: pointer;
+    text-align: left;
+    outline: none;
+    transition: background-color 0.2s;
+
+}
+
+button:hover {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+button:focus {
+    border: none;
+    outline: none;
+}
+
+button:active {
+    border: none;
+    outline: none;
+}
+
+.userLetter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333232;
+    border-radius: 50%;
+    background-color: #ffea9f;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    aspect-ratio: 1;
+    text-transform: uppercase;
+    margin-left: 1rem;
+}
+
+.addButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+    background-color: #ffea9f;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    width: 6rem;
+    margin-right: 1rem;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333232;
+    
+}

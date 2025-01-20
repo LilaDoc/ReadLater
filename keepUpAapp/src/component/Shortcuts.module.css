@@ -1,0 +1,50 @@
+.shortcutsTitle {
+    font-size: 16px;
+    font-weight: 150;
+    padding-left: 1rem;
+    color: #808080;
+}
+
+
+.labels {
+    display: flex;
+    align-items: center;
+    
+    gap: 8px;
+    color: #000000;  
+    padding: 0.5rem;
+    padding-left: 1.5rem;
+}
+.labels:hover {
+    background-color: #ebebeb;
+}
+
+.labelsList {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+.labelsText {
+    font-size: 15px;
+    color: #333232;
+}
+
+.labelsItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    color: #5e5d5d;
+    border: none;
+    background-color: transparent;
+    text-align: left;
+    padding: 0.5rem;
+    padding-left: 2.5rem;
+}
+
+.labelsItem:hover {
+    background-color: #d6d3d3;
+}

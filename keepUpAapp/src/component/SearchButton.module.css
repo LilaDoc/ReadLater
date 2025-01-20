@@ -1,0 +1,46 @@
+.searchButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin-right: 2rem;
+    padding: 0.5rem;
+    background-color: #e5e5e5;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    border-left: 0;
+}
+
+.searchButton:hover {
+    background-color: #d5d5d5;
+}
+
+.searchIcon{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+
+.searchButtonClicked {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin-right: 2rem;
+    padding: 0.5rem;
+    background-color: #e5e5e5;
+    height: 40px;
+    width: 40px;
+    border-radius: 0 5px 5px 0;
+    border-left: 0;
+}
+
+.searchButtonClicked:hover {
+    background-color: #d5d5d5;
+}
+
