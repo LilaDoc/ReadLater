@@ -1,0 +1,104 @@
+.articleContainer {
+    display: grid;
+    grid-template-columns: 50px 1fr;  
+}
+
+.articleMenu {
+    grid-column: 1; 
+    position: fixed;
+    height: 50%;   
+    width: 50px;     
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    background-color: transparent; 
+    border-right: none; 
+}
+
+.articleMenuToolBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 1rem;  /* Espace entre les boutons */
+}
+.articleMenuButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+.logo {
+    margin: 1rem;
+    width: 40px;
+    height: 40px;
+}
+
+.articleMenuToolBarButton {
+    width: 22px;
+    height: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.articleBody {
+    grid-column: 2;  
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}     
+
+.articleTitle {
+    font-size: 2.5rem;        
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.articleContent {
+    font-size: 18px; 
+    font-weight: 400;       
+    color: #444;
+
+    p {
+        margin-bottom: 1.5rem;
+    }
+
+
+    img {
+        max-width: 100%;
+        height: auto;
+        margin: 2rem 0;
+        border-radius: 8px;
+    }
+
+    a {
+        color: #0066cc;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+
+    h2, h3, h4 {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        color: #333;
+    }
+}

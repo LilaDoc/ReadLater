@@ -3,7 +3,7 @@ import styles from './Add.module.css';
 import addIcon from '/assets/add.png'; 
 
 function Add({ onAddArticle, onClose, handleChange }) {
-    const [isPopupOpen, setIsPopupOpen] = useState(true);
+    // const [isPopupOpen, setIsPopupOpen] = useState(true);
 
     const handleSubmit = () => {
         onAddArticle();

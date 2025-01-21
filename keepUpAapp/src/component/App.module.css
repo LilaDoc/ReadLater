@@ -77,6 +77,22 @@
     height: 100%;
 }
 
+@media (max-width: 856px) {
+    .container {
+        grid-template-columns: 1fr;
+        position: relative;
+    }
+    .leftBar {
+        width: 100%;
+        position: absolute;
+        z-index: 98;
+        background-color: rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease-in-out;
+    }
+    .home {
+        grid-column: 1;
+    }
+}
 /* .wrapper {
      height: 100%; 
 } */

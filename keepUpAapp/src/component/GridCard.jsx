@@ -4,7 +4,7 @@ import CardToolBar from './CardToolBar';
 
 function GridCard(props) {
     return (
-        <div className={styles.gridCard}>
+        <div className={styles.gridCard} onClick={props.handleArticleClick}>
             <div className={styles.gridCardToolBar}>
                 <CardToolBar />
             </div>

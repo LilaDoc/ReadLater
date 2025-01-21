@@ -7,7 +7,7 @@ function Card(props) {
     
   return (
     
-        <div className={styles.cardContent} >
+        <div className={styles.cardContent} onClick={props.handleArticleClick} >
            <div className={styles.cardCheckbox}>
             <input type="checkbox" className={styles.checkBox}/>
            </div>
@@ -16,7 +16,7 @@ function Card(props) {
                 <div className={styles.metaText}>
                     <p>a month ago • 10 min read</p>
                 </div>
-                     <p className={styles.cardTitle} onClick={props.handleArticleClick}>
+                     <p className={styles.cardTitle} >
                     {props.title}
                     </p>
                 <div className={styles.metaText}>

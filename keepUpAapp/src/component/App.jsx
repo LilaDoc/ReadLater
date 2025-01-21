@@ -61,6 +61,7 @@ function App() {
   }
   const [addPopup, setAddPopup] = useState(false);
   const [showLeftBar, setShowLeftBar] = useState(false);
+  const [home, setHome] = useState(true);
 
   const toggleLeftBar = () => {
     setShowLeftBar(!showLeftBar);
@@ -69,14 +70,22 @@ function App() {
     setAddPopup(true);
   }
 
-  if (article) {
-
+  useEffect(() => {
+    if (article) {
+      setHome(false);
+    }
+  }, [article]);
+  
+  if (home === false) {
     return (
       <>
-      <Article title={article.title} content={article.content} />
+        <Article 
+          backToHome={() => setHome(true)}
+          title={article.title} 
+          content={article.content} 
+        />
       </>
     )
-
   }else{
     return (
 

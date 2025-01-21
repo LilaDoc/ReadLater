@@ -27,6 +27,7 @@
     position: fixed;
     top: 1rem;
     right: 2rem;
+    z-index: 90;
 }
 
 .listButton, .gridButton {
@@ -47,5 +48,5 @@
 }
 
 .viewButton:hover {
-    background-color: rgb(255, 210, 52);
+    background-color: #FFEAA0;
 }
