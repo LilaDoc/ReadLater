@@ -12,7 +12,7 @@ function Article(props ) {
       <div className={styles.articleSettings}><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M280-160v-520H80v-120h520v120H400v520H280Zm360 0v-320H520v-120h360v120H760v320H640Z"/></svg> </div>
       <div className={styles.articleMenu}>
         <button onClick={props.backToHome}className={styles.articleMenuButton}><img className={styles.logo} src={logo} alt="logo" />OMNIMOR</button>
-          <div className={styles.articleMenuToolBar}>
+          {/* <div className={styles.articleMenuToolBar}>
           <button className={styles.articleMenuToolBarButton}>
                 <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M200-80q-33 0-56.5-23.5T120-160v-451q-18-11-29-28.5T80-680v-120q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v120q0 23-11 40.5T840-611v451q0 33-23.5 56.5T760-80H200Zm0-520v440h560v-440H200Zm-40-80h640v-120H160v120Zm200 280h240v-80H360v80Zm120 20Z"/></svg>
             </button>
@@ -27,7 +27,7 @@ function Article(props ) {
            <button className={styles.articleToolBarButton}>
            <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg>
            </button>
-          </div>
+          </div> */}
       </div>
       <div className={styles.articleBody}>
         <h1 className={styles.articleTitle} dangerouslySetInnerHTML={{ __html: sanitizedTitle }} />

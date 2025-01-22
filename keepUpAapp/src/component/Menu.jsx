@@ -10,11 +10,11 @@ function Menu(props) {
     return (
         <div className={styles.menu}>
             <button className={styles.menuButton} ><img className={styles.menuIcon} src={home} alt="home" />Home</button>
-            <button className={styles.menuButton}><img className={styles.menuIcon} src={library} alt="library" />Library</button>
+            {/* <button className={styles.menuButton}><img className={styles.menuIcon} src={library} alt="library" />Library</button>
             <button className={styles.menuButton}><img className={styles.menuIcon} src={subscriptions} alt="subscriptions" />Subscriptions</button>
             <button className={styles.menuButton}><img className={styles.menuIcon} src={highlights} alt="highlights" />Highlights</button>
             <button className={styles.menuButton}><img className={styles.menuIcon} src={archives} alt="archives" />Archives</button>
-            <button className={styles.menuButton}><img className={styles.menuIcon} src={trash} alt="trash" />Trash</button>
+            <button className={styles.menuButton}><img className={styles.menuIcon} src={trash} alt="trash" />Trash</button> */}
 
         </div>
     )
