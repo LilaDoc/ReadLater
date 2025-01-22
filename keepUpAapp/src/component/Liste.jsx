@@ -8,8 +8,10 @@ function Liste(props) {
       {props.articles.map((article) => (
         <Card className={styles.listeCard}
           title={article.title}
+          id={article.id}
           key={article.id}
           handleArticleClick={() => props.onArticleClick(article)} 
+          deleteArticle={props.deleteArticle}
         />
       ))}
     </div>

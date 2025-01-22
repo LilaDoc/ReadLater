@@ -23,7 +23,20 @@
     align-items: center;
     justify-content: center;
     flex-direction: column-reverse;
-    gap: 1rem;  /* Espace entre les boutons */
+    gap: 1rem; 
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.articleSettings {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: #acacac;
+}
+.articleSettings:hover {
+    cursor: pointer;
+    color: #dfdfdf;
 }
 .articleMenuButton {
     display: flex;

@@ -23,9 +23,9 @@ function Home(props) {
                 handleChange={props.handleChange}
             />
             {view === 'grid' ? (
-                <Gridview articles={props.articles} onArticleClick={props.onArticleClick} />
+                <Gridview articles={props.articles} onArticleClick={props.onArticleClick} deleteArticle={props.deleteArticle}/>
             ) : (
-                <Liste articles={props.articles} onArticleClick={props.onArticleClick} />
+                <Liste articles={props.articles} onArticleClick={props.onArticleClick} deleteArticle={props.deleteArticle}/>
             )}
         </div> 
 

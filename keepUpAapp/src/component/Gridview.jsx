@@ -10,6 +10,8 @@ function Gridview(props) {
           title={article.title}
           key={article.id}
           handleArticleClick={() => props.onArticleClick(article)} 
+          deleteArticle={props.deleteArticle}
+          id={article.id}
         />
         ))}
     </div>

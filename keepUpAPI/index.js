@@ -116,10 +116,12 @@ app.post("/add", async (req, res) => {
   }
 });
 
-app.delete("/delete/:id", async (req, res) => {
+app.delete("/delete", async (req, res) => {
   try { 
-    const id = req.params.id;
-    await db.query("DELETE FROM articles WHERE id = $1", [id]);
+    const id = req.query.id;
+    console.log("Received delete request for ID:", id); // Debug log
+    const result = await db.query("DELETE FROM articles WHERE id = $1", [id]);
+    console.log("Delete result:", result); // Debug log
     res.json({ message: "Article deleted" });
   } catch (error) {
     console.error('Error:', error);

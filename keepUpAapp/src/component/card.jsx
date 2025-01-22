@@ -3,11 +3,16 @@ import styles from './card.module.css';
 import CardToolBar from './CardToolBar';
 
 function Card(props) {
-
+  const handleCardClick = (e) => {
+    // Empêcher le clic si on clique sur la toolbar
+    if (!e.target.closest(`.${styles.cardToolBar}`)) {
+      props.handleArticleClick();
+    }
+  };
     
   return (
     
-        <div className={styles.cardContent} onClick={props.handleArticleClick} >
+        <div className={styles.cardContent} key={props.id} onClick={handleCardClick} >
            <div className={styles.cardCheckbox}>
             <input type="checkbox" className={styles.checkBox}/>
            </div>
@@ -24,7 +29,10 @@ function Card(props) {
                  </div>
            </div>
            <div className={styles.cardToolBar}>
-             <CardToolBar />
+             <CardToolBar 
+                id={props.id} 
+                deleteArticle={props.deleteArticle}
+             />
            </div>
          
         </div>

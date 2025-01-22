@@ -4,15 +4,15 @@ import CardToolBar from './CardToolBar';
 
 function GridCard(props) {
     return (
-        <div className={styles.gridCard} onClick={props.handleArticleClick}>
+        <div className={styles.gridCard} >
             <div className={styles.gridCardToolBar}>
-                <CardToolBar />
+                <CardToolBar id={props.id} deleteArticle={props.deleteArticle}/>
             </div>
-            <div className={styles.gridCardHeader}>
+            <div className={styles.gridCardHeader}onClick={props.handleArticleClick}>
                 <input type="checkbox" />
                 <h1>{props.title}</h1>
             </div>
-            <div className={styles.gridCardBody}>
+            <div className={styles.gridCardBody}onClick={props.handleArticleClick}>
                 <div className={styles.gridCardBodyContent}>
                     <p className={styles.gridCardMeta}>a month ago 5min read</p>
                     <p className={styles.gridCardTitle}>{props.title}</p>

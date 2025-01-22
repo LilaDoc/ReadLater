@@ -2,15 +2,26 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: transparent;
-    gap: 5px;
+    background-color: #f1f3f9;
+    gap: 0;
+    position: relative;
+    z-index: 70;
+
 }
 
 .cardToolBarButton {
-    background-color: transparent;
-    height: 20px;
-    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: none;;
+    height: 30px;
+    width: 30px;
     padding: 0;
-    margin: 5px;
+    margin: 0;
 
+
+}
+
+.cardToolBarButton:hover {
+    background-color: #e0e0e0;
 }

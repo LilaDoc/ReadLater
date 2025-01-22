@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import styles from './Add.module.css';
 import addIcon from '/assets/add.png'; 
 
-function Add({ onAddArticle, onClose, handleChange }) {
-    // const [isPopupOpen, setIsPopupOpen] = useState(true);
-
+function Add({ onClose, addArticle }) {
+    const [url, setUrl] = useState('');
+    const handleChange = (e) => {
+        setUrl(e.target.value);
+    };
     const handleSubmit = () => {
-        onAddArticle();
-        onClose();
+        addArticle(url);
+        // onClose();
     };
 
     return (
@@ -23,8 +25,10 @@ function Add({ onAddArticle, onClose, handleChange }) {
                         onChange={handleChange}
                         placeholder="https://example.com/" 
                     />
+
                         
                         <button className={styles.addButton} onClick={handleSubmit}>Add</button>
+                        
 
                 </div>
 
