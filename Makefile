@@ -49,7 +49,7 @@ help:
 	@echo "  make run-app    - Lancer l'application"
 	@echo "  make stop-server - Stopper le serveur"
 	@echo "  make stop-app    - Stopper l'application"
-
+	@echo "  make stop-all    - Stopper tous les services"
 
 # Commande pour lancer le serveur et l'application avec logs
 run:
@@ -72,3 +72,4 @@ stop-server:
 # Commande pour stopper l'application
 stop-app:
 	@-pkill -f "node.*keepUpApp"
+
