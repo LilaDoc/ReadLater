@@ -1,0 +1,19 @@
+.liste {
+    display: grid;
+    width: 100%;
+    grid-auto-rows: auto;
+    grid-auto-flow: row;
+    border-radius: 6px;
+    gap: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* padding: 30px 100px; */
+    overflow: visible;
+    grid-template-columns: repeat(3, 1fr);  
+}
+
+@media (max-width: 1383px) {
+    .liste {
+        grid-template-columns: repeat(1, 300px);
+    }
+}
