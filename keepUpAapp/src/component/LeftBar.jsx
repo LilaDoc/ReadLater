@@ -14,7 +14,7 @@ function LeftBar(props) {
                 <Menu/>
             </div>
             <div className={styles.secondRow}>
-                    <Shortcuts/>
+                    {/* <Shortcuts/> */}
             </div>
             </div>
 
