@@ -10,24 +10,9 @@ KeepUp is a self-hosted web article management solution born from the sunset of 
 <!-- Method 1: Local images in your repository -->
 ![Homepage](./screenshots/homepage.png)
 ![Reader View](./screenshots/reader.png)
+![Add View](./screenshots/add.png)
 
-<!-- Method 2: Images hosted online -->
-![Demo](https://raw.githubusercontent.com/yourusername/keepup/main/demo.gif)
 
-<!-- Method 3: Images with custom size -->
-<img src="./screenshots/mobile.png" width="300" alt="Mobile View">
-
-<!-- Method 4: Images side by side -->
-<p float="left">
-  <img src="./screenshots/dark-mode.png" width="400" />
-  <img src="./screenshots/light-mode.png" width="400" /> 
-</p>
-
-<!-- Method 5: Image with caption -->
-<figure>
-  <img src="./screenshots/features.png" alt="Features Overview">
-  <figcaption>Overview of KeepUp's main features</figcaption>
-</figure>
 
 ## Key Features
 - 📑 Save articles from any URL
