@@ -1,40 +1,65 @@
-# KeepUp - Gestionnaire d'Articles Web
+# KeepUp - Your Personal Web Article Manager
 
-## Description
-Vue qu'OMNIVORE est dead, j'ai décidé de créer ma propre application de gestion d'articles. 
-Je compte integrer les differentes fonctionnalités de omnivore dans cette application.
+![KeepUp Logo](path/to/logo.png)
 
+## Overview
+KeepUp is a self-hosted web article management solution born from the sunset of Omnivore. It aims to provide a seamless experience for saving, and reading web articles.
 
-## Fonctionnalités
-- Sauvegarde d'articles à partir d'URLs
-- Affichage en mode grille ou liste
-- Lecture des articles dans une vue dédiée
-- Suppression d'articles
+## Screenshots
 
+<!-- Method 1: Local images in your repository -->
+![Homepage](./screenshots/homepage.png)
+![Reader View](./screenshots/reader.png)
 
-## Technologies Utilisées
+<!-- Method 2: Images hosted online -->
+![Demo](https://raw.githubusercontent.com/yourusername/keepup/main/demo.gif)
+
+<!-- Method 3: Images with custom size -->
+<img src="./screenshots/mobile.png" width="300" alt="Mobile View">
+
+<!-- Method 4: Images side by side -->
+<p float="left">
+  <img src="./screenshots/dark-mode.png" width="400" />
+  <img src="./screenshots/light-mode.png" width="400" /> 
+</p>
+
+<!-- Method 5: Image with caption -->
+<figure>
+  <img src="./screenshots/features.png" alt="Features Overview">
+  <figcaption>Overview of KeepUp's main features</figcaption>
+</figure>
+
+## Key Features
+- 📑 Save articles from any URL
+- 🎯 Clean reading experience
+- 📱 Responsive grid and list views
+- 🗑️ Easy article management
+- 🔍 Full-text search (coming soon)
+- 🏷️ Tags and categories (coming soon)
+
+## Tech Stack
+
 ### Frontend
-- React.js
-- Axios pour les requêtes HTTP
-- CSS Modules pour le styling
+- React.js for the UI
+- Axios for API communication
+- CSS Modules for styled components
 
 ### Backend
-- Node.js
-- Express.js
-- PostgreSQL pour la base de données
-- @mozilla/readability pour le parsing d'articles
-- JSDOM pour le parsing HTML
+- Node.js & Express.js
+- PostgreSQL database
+- @mozilla/readability for article parsing
+- JSDOM for HTML processing
 
-## Installation
+## Getting Started
 
-### Prérequis
-- Node.js
-- PostgreSQL
-- npm ou yarn
+### Prerequisites
+- Node.js (v14 or higher)
+- PostgreSQL (v12 or higher)
+- npm or yarn
 
-### Configuration de la Base de Données
-1. Créez une base de données PostgreSQL
-2. Créez une table `articles` :
+### Database Setup
+1. Create a new PostgreSQL database
+2. Set up the articles table:
 sql
 CREATE TABLE articles (
 id SERIAL PRIMARY KEY,
@@ -44,29 +69,31 @@ link TEXT
 
 
 ### Configuration du Backend
-1. Naviguez vers le dossier `keepUpAPI`
-2. Créez un fichier `.env` avec les variables suivantes :
+### Backend Setup
+1. Navigate to the `keepUpAPI` directory
+2. Create a `.env` file with your database credentials:
 DB_USER=votre_utilisateur
 DB_HOST=localhost
 DB_NAME=nom_de_votre_base
 DB_PASSWORD=votre_mot_de_passe
 DB_PORT=5432
-3. Installez les dépendances :
+3. Install dependencies:
 bash
 npm install
-4. Démarrez le serveur :
+4. Start the server:
 bash
 npm start
 
 
-## Utilisation
-1. Ajoutez un article en cliquant sur le bouton "Add" dans la barre latérale
-2. Collez l'URL de l'article que vous souhaitez sauvegarder
-3. Visualisez vos articles en mode grille ou liste
-4. Cliquez sur un article pour le lire
-5. Utilisez la barre d'outils pour gérer vos articles (supprimer, archiver, etc.)
+## Usage Guide
+1. Launch the application
+2. Click the "Add" button in the sidebar
+3. Paste any article URL to save it
+4. Browse your articles in grid or list view
+5. Click on any article to open the reader view
+6. Use the toolbar for article management
 
-## Structure du Projet
+## Project Structure
 keepUp/
 ├── keepUpAapp/ # Frontend React
 │ ├── public/assets/ # Assets
@@ -77,8 +104,10 @@ keepUp/
 └── config/ # Configuration
 
 ## Contribution
-
-
+Contributions are welcome! Feel free to:
+- Report bugs
+- Suggest new features
+- Contribute to the code
 ## Licence
 Ce projet est sous licence MIT - voir le fichier LICENSE pour plus de détails.
 

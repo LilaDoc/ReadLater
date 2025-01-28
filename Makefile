@@ -1,6 +1,6 @@
 # Variables
 API_DIR = keepUpAPI
-APP_DIR = keepUpAapp
+APP_DIR = keepUpApp
 
 # Couleurs pour les messages
 GREEN = \033[0;32m
@@ -54,7 +54,8 @@ help:
 # Commande pour lancer le serveur et l'application avec logs
 run:
 	cd $(API_DIR) && nodemon index.js
-	cd $(APP_DIR) && run dev 
+
+	cd $(APP_DIR) && npm run dev 
 
 # Commande pour lancer le serveur
 run-server:
@@ -62,7 +63,7 @@ run-server:
 
 # Commande pour lancer l'application
 run-app:
-	cd $(APP_DIR) && run dev 
+	cd $(APP_DIR) && npm run dev 
 
 # Commande pour stopper le server
 stop-server:
