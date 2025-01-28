@@ -45,29 +45,34 @@ KeepUp is a self-hosted web article management solution born from the sunset of 
 ### Database Setup
 1. Create a new PostgreSQL database
 2. Set up the articles table:
-sql
+```sql
 CREATE TABLE articles (
 id SERIAL PRIMARY KEY,
 title VARCHAR(255),
 link TEXT
 );
+```
 
 
 ### Configuration du Backend
 ### Backend Setup
 1. Navigate to the `keepUpAPI` directory
 2. Create a `.env` file with your database credentials:
+```
 DB_USER=votre_utilisateur
 DB_HOST=localhost
 DB_NAME=nom_de_votre_base
 DB_PASSWORD=votre_mot_de_passe
 DB_PORT=5432
+```
 3. Install dependencies:
-bash
+```bash
 npm install
+```
 4. Start the server:
-bash
+```bash
 npm start
+```
 
 
 ## Usage Guide
@@ -80,13 +85,16 @@ npm start
 
 ## Project Structure
 keepUp/
-├── keepUpAapp/ # Frontend React
-│ ├── public/assets/ # Assets
-│ ├── src/
-│ │ ├── components/ # Composants React et Fichiers CSS
-└── keepUpAPI/ # Backend Express
-├── routes/ # Routes API
-└── config/ # Configuration
+│
+├── keepUpApp/           # Frontend React
+│   ├── public/         
+│   │   └── assets/     # Assets
+│   └── src/
+│       └── components/ # React Components and CSS Files
+│
+└── keepUpAPI/          # Backend Express
+    ├── routes/         # API Routes
+    └── config/         # Configuration
 
 ## Contribution
 Contributions are welcome! Feel free to:
