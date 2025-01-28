@@ -7,9 +7,12 @@ KeepUp is a self-hosted web article management solution born from the sunset of 
 
 ## Screenshots
 
-<!-- Method 1: Local images in your repository -->
+Here is a screenshot of the application:
+First view:
 ![Homepage](./screenshots/homepage.png)
+Reader view:
 ![Reader View](./screenshots/reader.png)
+Add view:
 ![Add View](./screenshots/add.png)
 
 
