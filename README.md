@@ -84,6 +84,7 @@ npm start
 6. Use the toolbar for article management
 
 ## Project Structure
+```tree
 keepUp/
 │
 ├── keepUpApp/           # Frontend React
@@ -95,6 +96,7 @@ keepUp/
 └── keepUpAPI/          # Backend Express
     ├── routes/         # API Routes
     └── config/         # Configuration
+```
 
 ## Contribution
 Contributions are welcome! Feel free to:
